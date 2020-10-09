@@ -10260,3 +10260,29 @@ body {
 .sb-sidenav-light .sb-sidenav-footer {
   background-color: #e9ecef;
 }
+.submit-login:hover{
+  color: white;
+  background-color: cyan;
+  border: cyan 1px solid;
+  box-shadow:0px 0px 30px 5px cyan;
+  transition: 200ms;
+}
+.back{
+  background-image: url(../assets/img/perpus.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.submit-register:hover{
+  color: white;
+  background-color: cyan;
+  border: cyan 1px solid;
+  box-shadow:0px 0px 30px 5px cyan;
+  transition: 200ms;
+}
+.submit-password:hover{
+  color: white;
+  background-color: cyan;
+  border: cyan 1px solid;
+  box-shadow:0px 0px 30px 5px cyan;
+  transition: 200ms;
+}
