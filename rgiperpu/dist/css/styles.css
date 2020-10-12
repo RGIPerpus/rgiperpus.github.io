@@ -10286,3 +10286,97 @@ body {
   box-shadow:0px 0px 30px 5px cyan;
   transition: 200ms;
 }
+/* profile */
+#jumbotron{
+  background: url(img/bg.jpg);
+}
+.jumbotron a{
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+.jumbotron h3{
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+.jumbotron a:hover{
+  text-decoration: none;
+  color: cyan;
+  text-shadow: 2px 2px 5px cyan;
+  transition: 200ms;
+}
+.konten{
+  margin-top: 20px;
+}
+.skills{
+  margin-top: 20px;
+}
+a.fb{
+  padding: 10px;
+  background-color: #3b5998;
+  border-radius: 5px;
+  color: white;
+  margin: 10px;
+}
+a.fb:hover{
+  background-color:cyan;
+  box-shadow: 0px 0px 50px 7px cyan;
+  color: white;
+  transition: 200ms;
+}
+a.twit{
+  padding: 10px;
+  background-color:#55acee;
+  border-radius: 5px;
+  color: white;
+  margin: 10px;
+}
+a.twit:hover{
+  background-color:cyan;
+  box-shadow: 0px 0px 50px 7px cyan;
+  color: white;
+  transition: 200ms;
+}
+a.ig{
+  padding: 10px;
+  background-color:#3f729b;
+  border-radius: 5px;
+  color: white;
+  margin: 10px;
+}
+a.ig:hover{
+  background-color:cyan;
+  box-shadow: 0px 0px 50px 7px cyan;
+  color: white;
+  transition: 200ms;
+}
+a.git{
+  padding: 10px;
+  background-color:#444;
+  border-radius: 5px;
+  color: white;
+  margin: 10px;
+}
+a.git:hover{
+  background-color:cyan;
+  box-shadow: 0px 0px 50px 7px cyan;
+  color: white;
+  transition: 200ms;
+}
+.card-skills{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card-detail{
+  margin-top: 20px;
+}
+.card-about{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.paragrap1 {
+  margin-top: 35px;
+}
+.penutup{
+  margin-top: 65px;
+}
