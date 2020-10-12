@@ -10018,24 +10018,6 @@ body {
   height: 100%;
 }
 
-form {
-  width:500px;margin:50px auto;
-}
-.search {          
-  padding:8px 15px; background: #f0f8ff; border:2px solid #008080;
-}
-.button {
-  position:relative;left:-4px;          
-  padding:10px 15px; border:0px solid #008080;          
-  background-color: #6B8E23; color:#fafafa;font-weight:bold;
-}
-  .button:hover {background: #008080;          
-    color:#fafafa;
-  }
-    .button:active {
-      background:#9ACD32;
-    }
-
 .container,
 .container-fluid,
 .container-sm,
