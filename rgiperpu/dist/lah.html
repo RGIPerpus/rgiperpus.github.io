@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Tabel Petugas</h3>
+
+
+
+<figure class="wp-block-table"><table class="has-subtle-pale-blue-background-color has-background"><tbody><tr><td><strong>No</strong></td><td><strong>Kolom</strong></td><td><strong>Tipe</strong></td><td><strong>Keterangan</strong></td></tr><tr><td>1</td><td>id_petugas</td><td>int(11)</td><td> Primary Key, Auto Increment </td></tr><tr><td>2</td><td>nama_petugas</td><td>varchar(50)</td><td>Not Null</td></tr><tr><td>3</td><td>jabatan_petugas</td><td>varchar(50)</td><td>Not Null</td></tr><tr><td>4</td><td>no_telp_petugas</td><td>char(13)</td><td>&#8211;</td></tr><tr><td>5</td><td>alamat_petugas</td><td>varchar(100)</td><td>&#8211;</td></tr></tbody></table></figure>
+
+
+
+<h3>Tabel Anggota</h3>
+
+
+
+<figure class="wp-block-table"><table class="has-subtle-pale-blue-background-color has-background"><tbody><tr><td><strong>No</strong></td><td><strong>Kolom</strong></td><td><strong>Tipe</strong></td><td><strong>Keterangan</strong></td></tr><tr><td>1</td><td>id_anggota</td><td>int(11)</td><td>Primary Key, Auto Increment</td></tr><tr><td>2</td><td>kode_anggota</td><td>char(9)</td><td>Unik, Not Null</td></tr><tr><td>3</td><td>nama_anggota</td><td>varchar(100)</td><td> Not Null </td></tr><tr><td>4</td><td>jk_anggota</td><td>char(1)</td><td> Not Null </td></tr><tr><td>5</td><td>jurusan_anggota</td><td>char(2)</td><td> Not Null </td></tr><tr><td>6</td><td>no_telp_anggota</td><td>char(13)</td><td>&#8211;</td></tr><tr><td>7</td><td>alamat_anggota</td><td>varchar(100)</td><td>&#8211;</td></tr></tbody></table></figure>
+
+
+
+<h2>Tabel Buku</h2>
+
+
+
+<figure class="wp-block-table"><table class="has-subtle-pale-blue-background-color has-background"><tbody><tr><td><strong>No</strong></td><td><strong>Kolom</strong></td><td><strong>Tipe</strong></td><td><strong>Keterangan</strong></td></tr><tr><td>1</td><td>id_buku</td><td>int(11)</td><td> Primary Key, Auto Increment</td></tr><tr><td>2</td><td>kode_buku</td><td>char(5)</td><td>Unik, Not Null</td></tr><tr><td>3</td><td>judul_buku</td><td>varchar(50)</td><td>Not Null</td></tr><tr><td>4</td><td>penulis_buku</td><td>varchar(50)</td><td>Not Null</td></tr><tr><td>5</td><td>penerbit_buku</td><td>varchar(50)</td><td>&#8211;</td></tr><tr><td>6</td><td>tahun_penerbit</td><td>char(4)</td><td>&#8211;</td></tr><tr><td>7</td><td>stok</td><td>int(11)</td><td>&#8211;</td></tr></tbody></table></figure>
+
+
+
+<h3>Tabel Rak</h3>
+
+
+
+<figure class="wp-block-table"><table class="has-subtle-pale-blue-background-color has-background"><tbody><tr><td><strong>No</strong></td><td><strong>Kolom</strong></td><td><strong>Tipe</strong></td><td><strong>Keterangan</strong></td></tr><tr><td>1</td><td>id_rak</td><td>int(11)</td><td> Primary Key, Auto Increment</td></tr><tr><td>2</td><td>nama_rak</td><td>varchar(50)</td><td>Not Null</td></tr><tr><td>3</td><td>lokasi_rak</td><td>varchar(50)</td><td>Not Null</td></tr><tr><td>4</td><td>id_buku</td><td>int(11)</td><td>Foreign Key</td></tr></tbody></table></figure>
+
+
+
+<h3>Tabel Peminjaman</h3>
+
+
+
+<figure class="wp-block-table"><table class="has-subtle-pale-blue-background-color has-background"><tbody><tr><td><strong>No</strong></td><td><strong>Kolom</strong></td><td><strong>Tipe</strong></td><td><strong>Keterangan</strong></td></tr><tr><td>1</td><td>id_peminjaman</td><td>int(11)</td><td>  Primary Key, Auto Increment </td></tr><tr><td>2</td><td>tanggal_pinjam</td><td>date</td><td>Not Null</td></tr><tr><td>3</td><td>tanggal_kembali</td><td>date</td><td> Not Null </td></tr><tr><td>4</td><td>id_buku</td><td>int(11)</td><td> Not Null </td></tr><tr><td>5</td><td>id_anggota</td><td>int(11)</td><td> Not Null </td></tr><tr><td>6</td><td>id_petugas</td><td>int(11)</td><td> Not Null </td></tr></tbody></table></figure>
+
+
+
+<h3>Tabel Pengembalian</h3>
+
+
+
+<figure class="wp-block-table"><table class="has-subtle-pale-blue-background-color has-background"><tbody><tr><td>No</td><td>Kolom</td><td>Tipe</td><td>Keterangan</td></tr><tr><td>1</td><td>id_pengembalian</td><td>int(11)</td><td>   Primary Key, Auto Increment  </td></tr><tr><td>2</td><td>tanggal_pengembalian</td><td>date</td><td>Not Null</td></tr><tr><td>3</td><td>denda</td><td>int(11)</td><td>&#8211;</td></tr><tr><td>4</td><td>id_buku</td><td>int(11)</td><td> Not Null </td></tr><tr><td>5</td><td>id_anggota</td><td>int(11)</td><td> Not Null </td></tr><tr><td>6</td><td>id_petugas</td><td>int(11)</td><td> Not Null </td></tr></tbody></table></figure>
+</body>
+</html>
