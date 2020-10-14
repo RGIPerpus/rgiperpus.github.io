@@ -6,12 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Dashboard - SB</title>
+        <title>Dashboard RGI</title>
         <link href="css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -52,7 +52,7 @@
                 <li class="nav-item dropdown" style="margin-top: 3px;">
                     <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i style="color: gray;" class="material-icons">&#xe7fd;</i></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="profile.html">Profile</a>
                         <a class="dropdown-item" href="#">Settings</a>
                         <a class="dropdown-item" href="#">Activity Log</a>
                         <div class="dropdown-divider"></div>
@@ -79,8 +79,8 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="../data-pengunjung.html">Data Pengunjung</a>
-                                    <a class="nav-link" href="../data-buku.html">Data Buku</a> 
+                                    <a class="nav-link" href="charts1.html">Data Pengunjung</a>
+                                    <a class="nav-link" href="charts2.html">Data Buku</a> 
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
@@ -90,28 +90,14 @@
                             </a>
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="pagesCollapseAuth">
                                         Transaksi Pinjam Buku
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                        
                                     </a>
-                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="login.html">Login</a>
-                                            <a class="nav-link" href="register.html">Register</a>
-                                            <a class="nav-link" href="password.html">Forgot Password</a>
-                                        </nav>
-                                    </div>
-                                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="pagesCollapseError">
                                         Transaksi Kembali Buku
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
-                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="401.html">401 Page</a>
-                                            <a class="nav-link" href="404.html">404 Page</a>
-                                            <a class="nav-link" href="500.html">500 Page</a>
-                                        </nav>
-                                    </div>
+                                  
                                 </nav>
                             </div>
                             <div class="sb-sidenav-menu-heading">Addons</div>
@@ -127,10 +113,11 @@
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Logged in as:</div>
-                        Start Bootstrap
+                        Rumah Gemilang Indonesia
                     </div>
                 </nav>
             </div>
+            <!--awal jobs tholib-->
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
@@ -138,50 +125,61 @@
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">Dashboard</li>
                         </ol>
+                        <!--awal card-->
                         <div class="row">
                             <div class="col-xl-3 col-md-6">
-                                <div class="card bg-primary text-white mb-4">
-                                    <div class="card-body">Primary Card</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                <div class="card">
+                                    <div class="box bg-warning">
+                                      <div class="content">
+                                        <h3>Data Buku</h3>
+                                        <a class="icons"> <button class="btn btn-primary btn-lg active"
+                                            type="button" data-toggle="modal" data-target="#mymodal1" style='font-size:30px'> <i class='fas fa-book'></i></button></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card">
+                                    <div class="box bg-primary">
+                                      <div class="content">
+                                        <h3>Boking Buku </h3>
+                                        <a class="icons"> <button class="btn btn-dark btn-lg active" 
+                                            type="button" data-toggle="modal" data-target="#mymodal2" style='font-size:30px'> <i class='fas fa-book'></i></button></a>  
+                                      </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-md-6">
-                                <div class="card bg-warning text-white mb-4">
-                                    <div class="card-body">Warning Card</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                <div class="card">
+                                    <div class="box bg-danger">
+                                      <div class="content">
+                                        <h3>Kartu Pintar </h3>
+                                        <a class="icons"><button class="btn btn-warning btn-lg active" 
+                                            type="button" data-toggle="modal" data-target="#mymodal3"  style='font-size:30px'> <i class='fas fa-address-card'></i></button>
+                                        </a>
+                                      </div>
                                     </div>
-                                </div>
+                                  </div>
                             </div>
                             <div class="col-xl-3 col-md-6">
-                                <div class="card bg-success text-white mb-4">
-                                    <div class="card-body">Success Card</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-danger text-white mb-4">
-                                    <div class="card-body">Danger Card</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                <div class="card">
+                                    <div class="box bg-dark">
+                                      <div class="content text-warning">
+                                        <h3>Transaksi Pinjam </h3>
+                                         <a href="" class="icons"><button class="btn btn-danger btn-lg active" type="button"
+                                            data-toggle="modal" data-target="#mymodal4" style='font-size:30px'> <i class='fas fa-money-check-alt'></i></button></a>
+                                      </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!--akhir card-->
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-chart-area mr-1"></i>
-                                        Area Chart Example
+                                        Grafik Pengunjung Bulan September
                                     </div>
                                     <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
                                 </div>
@@ -190,12 +188,292 @@
                                 <div class="card mb-4">
                                     <div class="card-header">
                                         <i class="fas fa-chart-bar mr-1"></i>
-                                        Bar Chart Example
+                                        Grafik Pengunjung Bulan Januari-Juli 2020 
                                     </div>
                                     <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
                                 </div>
                             </div>
                         </div>
+                        <!--modal1-->
+                        <div class="modal fade" id="mymodal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">DATA BUKU</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <!--table modal1-->
+                                    <table class="table table-dark">
+                                        <thead>
+                                            <tr>
+                                              <th colspan="6">Data Buku Kampus RGI SURABAYA </th>
+                                            </tr>
+                                          </thead>
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">KODE BUKU</th>
+                                            <th scope="col">NO </th>
+                                            <th scope="col">JUDUL BUKU</th>
+                                            <th scope="col">PENERBIT</th>
+                                            <th scope="col">LOKASI </th>
+                                            <th scope="col">STATUS</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">22KRL</th>
+                                            <td>01</td>
+                                            <td>Membuat Aplikasi</td>
+                                            <td>Abd Mutholib Bangkalan</td>
+                                            <td>lt5R2</td>
+                                            <td>Ada</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">30KRL</th>
+                                            <td>02</td>
+                                            <td>Belajar Menjadi Hacker</td>
+                                            <td>Riski Bojonegoro</td>
+                                            <td>lt5R4</td>
+                                            <td>Ada</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">323TR</th>
+                                            <td>03</td>
+                                            <td>Belajar PHP dan Database</td>
+                                            <td>Ariyo surabaya</td>
+                                            <td>lt4R3</td>
+                                            <td>Dipinjam</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">22TRS</th>
+                                            <td>04</td>
+                                            <td>Belajar Bahasa Pemprograman</td>
+                                            <td>Ilham Kurniawan Blora</td>
+                                            <td>lt5R2</td>
+                                            <td>Ada</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">254KTP</th>
+                                            <td>05</td>
+                                            <td>Belajar Javascript & PHP </td>
+                                            <td>Farhan Asqolani Sidoarjo</td>
+                                            <td>lt5R2</td>
+                                            <td>Dipinjam</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">kj566</th>
+                                            <td>06</td>
+                                            <td>Belajar HTML5, CSS Dan Javascript </td>
+                                            <td>Khabab Jayyid Lombok</td>
+                                            <td>lt1R1</td>
+                                            <td>Ada</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">HJJ55</th>
+                                            <td>07</td>
+                                            <td>Belajar HTML, CSS & Javascript</td>
+                                            <td>Zulqo'dah Lamongan</td>
+                                            <td>lt5R2</td>
+                                            <td>Dipinjam</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--akhir modal-->
+                          <!--modal2-->
+                        <div class="modal fade" id="mymodal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">BOKING BUKU</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <!--table modal2-->
+                                    <table class="table table-primary">
+                                        <thead>
+                                            <tr>
+                                              <th colspan="6">Data Buku Kampus RGI SURABAYA </th>
+                                            </tr>
+                                          </thead>
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">KODE BUKU</th>
+                                            <th scope="col">NO </th>
+                                            <th scope="col">JUDUL BUKU</th>
+                                            <th scope="col">PENERBIT</th>
+                                            <th scope="col">LOKASI </th>
+                                            <th scope="col">STATUS</th>
+                                            <th scope="col"> PILIH BUKU</th>
+
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">22KRL</th>
+                                            <td>01</td>
+                                            <td>Membuat Aplikasi</td>
+                                            <td>Abd Mutholib Bangkalan</td>
+                                            <td>lt5R2</td>
+                                            <td>Ada</td>
+                                            <td><input type="radio"></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">30KRL</th>
+                                            <td>02</td>
+                                            <td>Belajar HTML5 & CSS</td>
+                                            <td>Riski Bojonegoro</td>
+                                            <td>lt5R4</td>
+                                            <td>Ada</td>
+                                            <td><input type="radio"></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">323TR</th>
+                                            <td>03</td>
+                                            <td>Belajar PHP dan Database</td>
+                                            <td>Ariyo surabaya</td>
+                                            <td>lt4R3</td>
+                                            <td>Dipinjam</td>
+                                            <td><input type="radio"></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">22TRS</th>
+                                            <td>04</td>
+                                            <td>Belajar Bahasa Pemprograman</td>
+                                            <td>Ilham Kurniawan surabaya</td>
+                                            <td>lt5R2</td>
+                                            <td>Ada</td>
+                                            <td><input type="radio"></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">254KTP</th>
+                                            <td>05</td>
+                                            <td>Belajar Javascript & PHP </td>
+                                            <td>Farhan Asqolani surabaya</td>
+                                            <td>lt5R2</td>
+                                            <td>Dipinjam</td>
+                                            <td><input type="radio"></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">kj566</th>
+                                            <td>06</td>
+                                            <td>Belajar HTML5, CSS Dan Javascript </td>
+                                            <td>Khabab Jayyid Lombok</td>
+                                            <td>lt1R1</td>
+                                            <td>Ada</td>
+                                            <td><input type="radio"></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">HJJ55</th>
+                                            <td>07</td>
+                                            <td>Belajar HTML, CSS & Javascript</td>
+                                            <td>Zulqo'dah Lamongan</td>
+                                            <td>lt5R2</td>
+                                            <td>Dipinjam</td>
+                                            <td><input type="radio"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark">Konfirmasi</button>
+                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--akhir modal-->
+                        <!--modal3-->
+                        <div class="modal fade" id="mymodal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Membuat Kartu Pintar</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <!--table modal3-->
+                                    <table class="table table-warning">
+                                        <thead>
+                                            <tr>
+                                              <th colspan="6">Silahkan Masukkan Data Anda</th>
+                                            </tr>
+                                          </thead>
+                                        <thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> NIK</td>
+                                                <td> :</td>
+                                                <td> <input type="number" placeholder="Masukkkan Nomer NIK Anda"></td>
+                                                <td> Masukkan Foto :<br> <br><input type="file"></td>
+                                             </tr>
+                                            <tr>
+                                                <td>Nama</td>
+                                                <td>:</td>
+                                                <td><input type="text" placeholder="Nama Lengkap"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tempat/Tgl Lahir</td>
+                                                <td>:</td>
+                                                <td><input type="text" placeholder="Masukan Tanggal Lahir Anda"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>jenis kelamin</td>
+                                                <td>:</td>
+                                                <td><input type="radio" id="male" name="gender" value="male">
+                                                    <label for="male"> Laki-laki</label>
+                                                    <input type="radio" id="female" name="gender" value="female">
+                                                    <label for="female">Wanita</label></td>
+                                            </tr>
+                                           <tr>
+                                                <td>Alamat</td>
+                                                <td>:</td>
+                                                <td><input type="text" placeholder="Masukan Alamat Anda"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>RT/RW</td>
+                                                <td>:</td>
+                                                <td><input type="text" placeholder="Masukan RT/RW "></td>
+                                            </tr>
+                                            <tr>
+                                                <td >Kel/Desa</td>
+                                                <td>:</td>
+                                                <td><input type="text" placeholder="Masukan Kel/Desa Anda"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>kecamatan</td>
+                                                <td>:</td>
+                                                <td><input type="text" placeholder="Masukan Kecamatan Anda"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Asal Sekolah/Universitas</td>
+                                                <td>:</td>
+                                                <td><input type="text" placeholder="Masukan Intansi Anda"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Status Pelajar</td>
+                                                <td>:</td>
+                                                <td><input type="radio" id="sudah" name="text" value="sudah">
+                                                    <label> lulus</label>
+                                                    <input type="radio" id="belum" name="text" value="belum">
+                                                    <label> Belum</label></td>
+                                            </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Kirim</button>
+                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--akhir modal-->
+                          <!--akhir kerja tholib-->
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table mr-1"></i>
